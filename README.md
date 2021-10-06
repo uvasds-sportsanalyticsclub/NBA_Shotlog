@@ -5,4 +5,4 @@ NBA Shotlog Data for the 2016/2017 Season
 - The data does not include free throws or shots where the shooter was fouled and missed.
 - The x-axis variable (this is the sideline) ranges from 0 to 993, while the y-axis variable (this is the baseline) runs from 0 to 500.
 - The dimensions of an NBA court are 94 feet by 50 feet. 
-Here's a guide to create heatmap using this data: https://www.kaggle.com/bhavishsalia/nba-16-17-heatmaps/notebook
+-Here's a guide to create heatmap using this data: https://www.kaggle.com/bhavishsalia/nba-16-17-heatmaps/notebook
