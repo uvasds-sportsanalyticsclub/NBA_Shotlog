@@ -7,3 +7,10 @@ NBA Shotlog Data for the 2016/2017 Season
 - You can find the coordinates for the rim by looking for plays classified as a "Dunk". This might be useful for calculating distance of a shot.
 - The dimensions of an NBA court are 94 feet by 50 feet. 
 - Here's a guide to create heatmap using this data: https://www.kaggle.com/bhavishsalia/nba-16-17-heatmaps/notebook
+- code for calculating distance:
+
+nba['location_x_feet'] = nba['location_x'] * (94/nba['location_x'].max())
+nba['location_x_feet'] = abs(nba['location_x_feet'] - 47)
+nba['location_y_feet'] = nba['location_y'] * (50/nba['location_x'].max())
+nba['location_y_feet'] = abs(nba['location_y_feet'] - 25)
+nba['distance'] = ((nba['location_x_feet'])**2 + (nba['location_y_feet']-47)**2)**.5
